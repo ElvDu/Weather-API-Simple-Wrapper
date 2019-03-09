@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" type="text/css" href="weather.css"/>
+<header>
+	Here's the Weather <!--First header line-->
+</header>
+<body>
+	<div id="inputZip">
+		<form action="weather.php"> <!--this is the form for the zipcode input. it's a basic form.-->
+			Zip Code: <input type="text" name="zipcode">
+			<input type="submit"><br>
+		</form>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div id="fiveDay"> <!--overall div for the five day forecast. this contains everything-->
+		<h1 id="fivedayTitle">Your 5 Day Forecast</h1><br> <!--this is the title for the forecast display
+															you can add city name here if you want-->
+		<div id="today"> <!--forecast for the current day-->
+			<h1 id="todayTitle">Today</h1>
+			<div id="todayPic"> 
+				<image src="weatherclipart.png"> <!--place image here. you're gonna have to rewrite this line to change the pic-->
+			</div>
+			<br>
+			<div id="todayTemp"> <!--average temperature or even the temperature right now-->
+				70
+			</div>
+				<div id="todayExtremes">
+					<div id="todayLow"> <!--low temperature for today-->
+						67
+					</div>
+					<div id="todayHigh"> <!--high temperature for today-->
+						72
+					</div>
+				</div>
+			<br>
+			<div id="todayDetails">
+				<div id="todayRain"> <!--place rainfall or current cloud status here-->
+					0 inches
+				</div>
+				<div id="todayWind"> <!--wind speeds go here-->
+					7 mp/h
+				</div>
+				<div id="todayHumidity"> <!-- humidity goes here-->
+					it's humid
+				</div>
+			</div>
+		<br>
+		</div>
+		<div id="tomorrow"> <!--the rest of the days are like today except without current temps-->
+			<h1>Tomorrow</h1>
+			<div id="tomorrowPic">
+				<image src="weatherclipart.png">
+			</div>
+			<br>
+			<div id="tomorrowExtremes">
+				<div id="tomorrowLow">
+					65
+				</div>
+				<div id="tomorrowHigh">
+					70
+				</div>
+			</div>
+			<br>
+			<br>
+			<div id="tomorrowDetails">
+				<div id="tomorrowRain">
+					12 inches
+				</div>
+				<div id="tomorrowWind">
+					12 mp/h
+				</div>
+				<div id="tomorrowHumidity">
+					100%
+				</div>
+			</div>
+		<br>
+		</div>
+		<div id="twoDays"> <!--two days from now-->
+			<h1>2 Days</h1>
+			<div id="twoDaysPic">
+				<image src="weatherclipart.png">
+			</div>
+			<br>
+			<div id="twoDaysExtremes">
+				<div id="twoDaysLow">
+					65
+				</div>
+				<div id="twoDaysHigh">
+					69
+				</div>
+			</div>
+			<br>
+			<br>
+			<div id="twoDaysDetails">
+				<div id="twoDaysRain">
+					12 inches
+				</div>
+				<div id="twoDaysWind">
+					100 mp/h
+				</div>
+				<div id="twoDaysHumidity">
+					2%
+				</div>
+			</div>
+		<br>
+		</div>
+		<div id="threeDays"> <!--three days from now-->
+			<h1>3 Days</h1>
+			<div id="threeDaysPic">
+				<image src="weatherclipart.png">
+			</div>
+			<br>
+			<div id="threeDaysExtremes">
+				<div id="threeDaysLow">
+					45
+				</div>
+				<div id="threeDaysHigh">
+					56
+				</div>
+			</div>
+			<br>
+			<br>
+			<div id="threeDaysDetails">
+				<div id="threeDaysRain">
+					3 inches
+				</div>
+				<div id="threeDaysWind">
+					35 mp/h
+				</div>
+				<div id="threeDaysHumidity">
+					50%
+				</div>
+			</div>
+		<br>
+		</div>
+		<div id="fourDays"> <!--four days from now-->
+			<h1>4 Days</h1>
+			<div id="fourDaysPic">
+				<image src="weatherclipart.png">
+			</div>
+			<br>
+			<div id="fourDaysExtremes">
+				<div id="fourDaysLow">
+					0
+				</div>
+				<div id="fourDaysHigh">
+					32
+				</div>
+			</div>
+			<br>
+			<br>
+			<div id="fourDaysDetails">
+				<div id="fourDaysRain">
+					32 inches
+				</div>
+				<div id="fourDaysWind">
+					0.043 mp/h
+				</div>
+				<div id="fourDaysHumidity">
+					50%
+				</div>
+			</div>
+		<br>
+		</div>
+	</div>
+</body>
+</html>
